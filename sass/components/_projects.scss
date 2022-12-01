@@ -5,6 +5,8 @@
 }
 
 .projects__item {
+  display: flex;
+
   transition: box-shadow var(--transition);
 
   &:hover,
@@ -22,14 +24,9 @@
 }
 
 .projects__link {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-}
-
-@media screen and(min-width: 768px) {
-  .projects__link {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* =========================
@@ -81,17 +78,12 @@ END OVERLAY
 ============================ */
 
 .projects__thumb {
+  flex-grow: 1;
   padding: 20px 24px;
 
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-@media screen and (min-width: 768px) {
-  .projects__thumb {
-    flex-grow: 1;
-  }
 }
 
 .projects__title {
