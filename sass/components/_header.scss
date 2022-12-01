@@ -95,6 +95,10 @@
 
 .contacts__link {
   color: var(--description-color);
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
 }
 
 .contacts__icon {
