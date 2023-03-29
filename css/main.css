@@ -169,7 +169,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .nav,
-.contacts {
+  .contacts {
     display: none;
   }
 }
@@ -1022,6 +1022,12 @@ ul {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.modal__btn--send:disabled,
+.btn:hover:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
 }
 
 .filter {
